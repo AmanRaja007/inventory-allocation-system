@@ -21,10 +21,10 @@ module.exports = pool;
 // (async () => {
 //   try {
 //     const connection = await pool.getConnection();
-//     console.log('✅ MySQL connected successfully');
+//     console.log('MySQL connected successfully');
 //     connection.release();
 //   } catch (err) {
-//     console.error('❌ MySQL connection failed', err.message);
+//     console.error('MySQL connection failed', err.message);
 //   }
 // })();
 
