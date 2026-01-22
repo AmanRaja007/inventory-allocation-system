@@ -1,17 +1,23 @@
 {
   "name": "inventory-allocation-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "description": "Inventory Allocation System - Demo Task 2",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1",
+    "express": "^4.19.2",
     "mysql2": "^3.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
