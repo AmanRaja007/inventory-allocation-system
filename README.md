@@ -77,9 +77,41 @@ Routes → Controllers → Services → Repositories → Database
 
  }
 
+## Concurrency Handling
 
+To prevent over-allocation under concurrent requests, the system uses:
 
+- **MySQL transactions**
 
+- **Row-level locking (SELECT ... FOR UPDATE)**
+
+  ### Example Scenario
+
+- Product stock = 5
+
+- Order A requests 3 → succeeds
+
+- Order B requests 3 (concurrent) → fails
+
+This ensures:
+
+- Atomic stock updates
+
+- No negative inventory
+
+- Correct behavior under concurrent access
+
+## Frontend (React)
+
+- Minimal UI for placing orders
+
+- No business logic
+
+- Sends requests to POST /order
+
+- Displays backend responses
+
+This demonstrates that the backend is **frontend-agnostic**.
 
 
 
