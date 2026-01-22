@@ -1,4 +1,4 @@
-# inventory-allocation-system
+# INVENTORY-ALLOCATION-SYSTEM
 ## Overview
 This project implements an Inventory Allocation System using Node.js, MySQL, and React.js, designed to safely process concurrent order requests while preventing stock over-allocation.
 
